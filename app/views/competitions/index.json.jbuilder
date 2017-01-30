@@ -1,0 +1,1 @@
+json.hash! @competitions, partial: 'competitions/competition', as: :competition

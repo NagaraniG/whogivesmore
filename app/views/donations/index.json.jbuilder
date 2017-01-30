@@ -1,0 +1,1 @@
+json.donations! @donations, partial: 'donations/donation', as: :donation
