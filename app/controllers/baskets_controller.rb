@@ -2,7 +2,7 @@ class BasketsController < ApplicationController
   before_action :require_login?
   before_action :set_basket, only: [:show, :edit, :update, :destroy]
 # before_action :authenticate
-  #skip_before_action :require_login?
+  # skip_before_action :require_login?
 
   def index
     @baskets =Basket.all

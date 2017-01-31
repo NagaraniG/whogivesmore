@@ -15,17 +15,15 @@ class User < ApplicationRecord
   has_many :user_teams
   has_many :teams, through: :user_teams
 
- 
-
   has_many :user_competitions
   has_many :competitions, through: :user_competitions
 
   has_many :user_baskets
   has_many :baskets, through: :user_baskets
 
-
   has_one :picture ,as: :imageable, :dependent => :destroy #
   accepts_nested_attributes_for :picture,:allow_destroy => true
+
   #it will genereate auth_token is unique and format is should hesdecimal
   def generate_auth_token
     token = SecureRandom.hex

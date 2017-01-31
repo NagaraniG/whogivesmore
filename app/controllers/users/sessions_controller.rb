@@ -25,32 +25,25 @@ class Users::SessionsController < Devise::SessionsController
   # end
 
   #skip_before_action :require_login!, only: [:create,:new]
-   skip_before_action :require_login?
-   skip_before_action :verify_signed_out_user
+  skip_before_action :require_login?
+  skip_before_action :verify_signed_out_user
 
   def create
-
-
-
-  resource = User.find_for_database_authentication(:email => params[:user][
+    resource = User.find_for_database_authentication(:email => params[:user][
     :email])
-
     return invalid_login_attempt unless resource
-
-    if resource.valid_password?(params[:user][:password])
+      if resource.valid_password?(params[:user][:password])
       auth_token = resource.generate_auth_token
       render json: {status: :ok ,auth_token: auth_token ,first_name:resource.first_name ,last_name: resource.last_name ,user_id: resource.id ,email:resource.email,team_items:resource.team_items} 
-      
-    else
+      else
       invalid_login_attempt
+      end
     end
-
-  end
   
   def destroy
     if resource = User.where("auth_token=?",params[:auth_token]).first
       puts resource.inspect
-     resource.update_attribute(:auth_token,'nil')
+      resource.update_attribute(:auth_token,'nil')
       render json: {status: :delete,auth_token: "null"} 
     else
       render json: {status: :error,auth_token: "not found"} 

@@ -2,7 +2,7 @@ class TeamsController < ApplicationController
   before_action :require_login?
   before_action :set_team, only: [:show, :edit, :update, :destroy]
 # before_action :authenticate
-  #skip_before_action :require_login?
+  # skip_before_action :require_login?
 
   def index
     @teams =Team.all
@@ -62,13 +62,6 @@ class TeamsController < ApplicationController
       format.json { render json:{status: :delete }}
     end
   end
-
-  # protected
-  # def authenticate
-  #    authenticate_or_request_with_http_token do |token, options|
-  #     User.find_by(auth_token: auth_token)
-  #   end
-  # end
 
   private
     # Use callbacks to share common setup or constraints between actions.

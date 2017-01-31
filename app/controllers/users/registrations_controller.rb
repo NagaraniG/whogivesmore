@@ -1,20 +1,16 @@
 class Users::RegistrationsController < ApplicationController
   before_action :set_user, only: [:show, :edit]
   skip_before_action :require_login?
-  # skip_before_action :require_no_authentication
-
-
+ 
   def index
     @users=User.all
-
     @teams=Team.all
   end
 
   def new
     @user=User.new
     @user.build_picture
-
-   @user.teams.build
+    @user.teams.build
     @user.donations.build
     @user.account_informations.build
     @user.baskets.build
@@ -29,9 +25,9 @@ class Users::RegistrationsController < ApplicationController
     
     respond_to do |format|
   # binding.pry
-    if @user.save
+      if @user.save
       format.json { render json:{status: :success, data: @user }}
-    else
+      else
       format.html { render :new }
       format.json { render json: {status: :error,data: @user.errors} }
       end
@@ -42,16 +38,13 @@ class Users::RegistrationsController < ApplicationController
   def update
     
     resource = User.find_for_database_authentication(:email => params[:user][:email])
-
     respond_to do |format|
     resource_updated=update_resource(resource, account_update_params)
-
     # binding.pry
-    if resource_updated
-
+      if resource_updated
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
         format.json { render json:{status: :ok, data: resource} }
-    else
+      else
         format.html { render :new }
         format.json { render json:{status: :error ,data: resource.errors}}
       end
@@ -59,9 +52,8 @@ class Users::RegistrationsController < ApplicationController
   end
 
   def destroy
-
     resource = User.find_for_database_authentication(:email => params[:user][:email])
-    binding.pry
+    # binding.pry
     resource.destroy
     respond_to do |format|
       # format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }

@@ -1,9 +1,14 @@
 class DonationsController < ApplicationController
-   before_action :set_donation, only: [:show, :edit, :update, :destroy]
+  before_action :set_donation, only: [:show, :edit, :update, :destroy]
 
-
+# skip_before_action :require_login?
   def index
     @donations =Donation.all
+    # @total_amount=Donation.sum('amount')
+    # @maximum_amount=Donation.maximum("amount")
+
+    # @highest_donor=Donation.where("amount=?",@maximum_amount).first
+    @highest_donor=Donation.order('amount DESC').limit(3)
   end
 
   def show

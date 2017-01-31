@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
 
 
+
 gem 'devise'
- # gem 'devise_token_auth'
+gem 'devise_token_auth'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use postgresql as the database for Active Record
@@ -12,12 +13,12 @@ gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'nodejs-rails','~>0.0.1'
-gem 'bower-rails'
+ # gem 'bower-rails'
 gem 'sprockets-rails', '2.3.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'angularjs-rails', '~> 1.2.25'
+# gem 'angularjs-rails', '~> 1.2.25'
 gem 'coffee-rails', '~> 4.2'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-rails'
@@ -25,8 +26,8 @@ gem 'font-awesome-rails'
 
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer' #, platforms: :ruby
- #gem 'execjs'
+ #gem 'therubyracer' #, platforms: :ruby
+# gem 'execjs'
 gem 'pry'
 # Use jquery as the JavaScript library
 gem "paperclip", "~> 5.1.0"

@@ -13,4 +13,4 @@ json.donation do
   json.amount donation.amount
   json.user_id donation.user_id
   json.team_id donation.team_id 
-  end
+end

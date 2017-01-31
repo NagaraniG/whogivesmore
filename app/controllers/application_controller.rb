@@ -27,8 +27,7 @@ end
 
   private
     def authenticate_token
-      
-        User.find_by(auth_token: params[:auth_token])
+      User.find_by(auth_token: params[:auth_token])
     end
 
 def mailer_set_url_options
@@ -54,10 +53,9 @@ protected
         # Fields for sign up
         # devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:first_name,:last_name,:date ,:email, :password) }
         # Fields for editing an existing account
+      devise_parameter_sanitizer.permit(:sign_up, keys: [:first_name,:last_name,:date,:email,:password,picture_attributes: [:avatar],:team_items=>[],:basket_items=>[]]) 
 
-devise_parameter_sanitizer.permit(:sign_up, keys: [:first_name,:last_name,:date,:email,:password,picture_attributes: [:avatar],:team_items=>[],:basket_items=>[]]) 
-
- devise_parameter_sanitizer.permit(:update,keys: [:first_name,:last_name,:date,:email,:password,picture_attributes: [:avatar],:team_items=>[],:basket_items=>[]]) 
+      devise_parameter_sanitizer.permit(:update,keys: [:first_name,:last_name,:date,:email,:password,picture_attributes: [:avatar],:team_items=>[],:basket_items=>[]]) 
     end
 
 end

@@ -1,0 +1,236 @@
+))
+    rsSetElementAt_uint4(rs_allocation a, uint4 val, uint32_t x);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_long(rs_allocation a, long val, uint32_t x);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_long2(rs_allocation a, long2 val, uint32_t x);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_long3(rs_allocation a, long3 val, uint32_t x);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_long4(rs_allocation a, long4 val, uint32_t x);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_ulong(rs_allocation a, ulong val, uint32_t x);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_ulong2(rs_allocation a, ulong2 val, uint32_t x);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_ulong3(rs_allocation a, ulong3 val, uint32_t x);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_ulong4(rs_allocation a, ulong4 val, uint32_t x);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_float(rs_allocation a, float val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_float2(rs_allocation a, float2 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_float3(rs_allocation a, float3 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_float4(rs_allocation a, float4 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_double(rs_allocation a, double val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_double2(rs_allocation a, double2 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_double3(rs_allocation a, double3 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_double4(rs_allocation a, double4 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_char(rs_allocation a, char val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_char2(rs_allocation a, char2 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_char3(rs_allocation a, char3 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_char4(rs_allocation a, char4 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_uchar(rs_allocation a, uchar val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_uchar2(rs_allocation a, uchar2 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_uchar3(rs_allocation a, uchar3 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_uchar4(rs_allocation a, uchar4 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_short(rs_allocation a, short val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_short2(rs_allocation a, short2 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_short3(rs_allocation a, short3 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_short4(rs_allocation a, short4 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_ushort(rs_allocation a, ushort val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_ushort2(rs_allocation a, ushort2 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_ushort3(rs_allocation a, ushort3 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_ushort4(rs_allocation a, ushort4 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_int(rs_allocation a, int val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_int2(rs_allocation a, int2 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_int3(rs_allocation a, int3 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_int4(rs_allocation a, int4 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_uint(rs_allocation a, uint val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_uint2(rs_allocation a, uint2 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_uint3(rs_allocation a, uint3 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_uint4(rs_allocation a, uint4 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_long(rs_allocation a, long val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_long2(rs_allocation a, long2 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_long3(rs_allocation a, long3 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_long4(rs_allocation a, long4 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_ulong(rs_allocation a, ulong val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((overloadable))
+    rsSetElementAt_ulong2(rs_allocation a, ulong2 val, uint32_t x, uint32_t y);
+#endif
+
+#if (defined(RS_VERSION) && (RS_VERSION >= 18))
+extern void __attribute__((over
